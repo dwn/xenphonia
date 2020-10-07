@@ -137,7 +137,7 @@ app.get('/', (req, res) => { //Redirect root
   fs.readdirSync('./public/lang').forEach(filename => {
     if (filename.split('.').pop() === 'svg') filenameList.push(filename.split('.')[0]);
   });
-  res.render('continua.pug', { filenameList : filenameList });
+  res.render('xenphonia.pug', { filenameList : filenameList });
 });
 ////////////////////////////////////////////
 app.use((req, res) => { //Basic 404 handler
