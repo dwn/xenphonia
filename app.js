@@ -134,8 +134,8 @@ app.get('/', (req, res) => { //Redirect root
   //Pass list of font files
   var filenameList = [];
   const fs = require('fs');
-  fs.readdirSync('./public/lang').forEach(filename => {
-    if (filename.split('.').pop() === 'svg') filenameList.push(filename.split('.')[0]);
+  fs.readdirSync('./public/mus').forEach(filename => {
+    if (filename.split('.').pop() === 'mscz') filenameList.push(filename.split('.')[0]);
   });
   res.render('xenphonia.pug', { filenameList : filenameList });
 });
