@@ -1,0 +1,1 @@
+MuseScore-3.4.1-x86_64.AppImage ~/doc/MuseScore3/Scores/FantasyFromBWV944.mscz -p xenharm --score-mp3 > output.mp3

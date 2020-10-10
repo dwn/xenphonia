@@ -1744,7 +1744,7 @@ for (i = 0; i < x.length; i++) {
   //For each element, create a new DIV that will act as the selected item
   a = document.createElement('DIV');
   a.setAttribute('class', 'select-selected-element');
-  a.setAttribute('title', 'choose script'); //*** ADDED ***
+  a.setAttribute('title', 'choose folio'); //*** ADDED ***
   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
   x[i].appendChild(a);
   //For each element, create a new DIV that will contain the option list
@@ -1795,17 +1795,17 @@ for (i = 0; i < x.length; i++) {
 ////////////////////////////////////////////
 function closeAllSelect(el, skipConfirm = false) {
   if ($(el).hasClass('select-selected-element') && !$(el).hasClass('select-arrow-active')) {
-    if (el.innerHTML !== 'CHOOSE SCRIPT') {
+    if (el.innerHTML !== 'CHOOSE FOLIO') {
       if (!skipConfirm) {
         if (confirm('Are you sure you want to leave this page? Unsaved data will be lost!')) {
           setVisibility('save-needed',false);
-          setTextAreaDisplay(false,el,'CHOOSE SCRIPT');
+          setTextAreaDisplay(false,el,'CHOOSE FOLIO');
           openedChat = false;
         } else {
           doNotToggleOptionList=true;
         }
       } else {
-        setTextAreaDisplay(false,el,'CHOOSE SCRIPT');
+        setTextAreaDisplay(false,el,'CHOOSE FOLIO');
       }
     }
   }

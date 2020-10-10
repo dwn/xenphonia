@@ -1,7 +1,7 @@
 /*//////////////////////////////////////////
 // Dan Nielsen
 //////////////////////////////////////////*/
-@font-face{font-family:standard;src:url(../img/continua.ttf)}
+@font-face{font-family:standard;src:url(../img/xenphonia.ttf)}
 .menu-element{display:none;} .select-selected-element{display:inline-block;} .conscript-loading-element{display:none;} .save-needed-element{display:none;} .otf-loading-element{display:none;} .otf-button-element{display:none;} .chat-loading-element{display:none;} .chat-button-element{display:none;} .font-element{display:none;} .adjust-element{display:none;} .donate-element{display:inline-block;} .help-element{display:inline-element;} .username-element{display:inline-block;} .pen-progress-element{display:none;} .play-element{display:none;} .script-element{display:none;} /*.gloss-element{display:none;}*/
 * {-webkit-font-smoothing: antialiased;}
 body {
@@ -87,7 +87,7 @@ select {
   background-color: #500050;
 }
 #console, #font-svg-container-container {
-  background-image: linear-gradient(to bottom,#a040a0,#680068);
+  background-image: linear-gradient(to bottom,#a040a0,#345);
   float: left;
   background-color: transparent;
   color: darkgray;
@@ -127,7 +127,7 @@ select {
     height:200px;
   }
 }
-.custom-select { width:100%; background-color:#680068; }
+.custom-select { width:100%; background-color:#345; }
 .custom-select select { display:none; }
 .select-hide { display: none; }
 .select-items div,.select-selected-element {
@@ -141,7 +141,7 @@ select {
 }
 .select-selected-element {
   display:inline-block;
-  background-color:#680068;
+  background-color:#345;
   font-weight:bold;
 }
 .select-items div {
@@ -158,7 +158,7 @@ select {
   cursor: pointer;
   user-select: none;
   width:12%;
-  background-color:#680068;
+  background-color:#345;
   outline:none;
 }
 .save-needed-element {
@@ -196,9 +196,9 @@ input[type=text].username-element {
   position:absolute;
   top:20px;
   right:5px;
-  width:150px;
+  width:166px;
   color:ivory;
-  background-color:#424;
+  background-color:#123;
   border:0;
 }
 .play-element {

@@ -15,11 +15,11 @@ div#page-container
       img.help-element(src='img/help.png' title='help')
     input.conscript-loading-element(type='image' src='img/loading.gif' title='please wait')
     select#lang
-      option CHOOSE SCRIPT
+      option CHOOSE FOLIO
       each filename in filenameList
         option=filename
     form
-      input.username-element(type='text' placeholder='USERNAME' pattern='[A-Za-z0-9]+')
+      input.username-element(type='text' placeholder='USERNAME OPTIONAL' pattern='[A-Za-z0-9]+')
     //- .donate-element
       form(action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top")
         input(type="hidden" name="cmd" value="_donations")
