@@ -1687,7 +1687,7 @@ function setTextAreaDisplay(on, titleEl, title = null, dat = null) {
     setVisibility('menu',true);
     setVisibility('script',true);
   } else {
-    document.body.style.backgroundImage = 'url(img/continua.svg)';
+    document.body.style.backgroundImage = 'url(img/xenphonia.svg)';
     document.getElementById('page-container').style.backgroundColor = 'transparent';
     hideAll();
     setVisibility('menu',false);
