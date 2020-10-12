@@ -28,7 +28,7 @@ nconf
   // 4. Defaults
   .defaults({
     CLOUD_BUCKET: 'xenphonia-bucket',
-    SVG_TO_OTF_SERVICE_URL: 'https://svg2otf-ujzvhu72lq-uc.a.run.app',
+    SVG_TO_OTF_SERVICE_URL: '',
     PORT: 8080,
   });
 
