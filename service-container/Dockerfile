@@ -15,9 +15,8 @@ RUN pip install \
   Flask \
   gunicorn \
   google-cloud-storage
-RUN add-apt-repository ppa:mscore-ubuntu/mscore-stable
-RUN apt-get update && apt-get install -y \
-  musescore
+RUN add-apt-repository ppa:mscore-ubuntu/mscore3-stable && apt-get update && apt-get install -y –allow-unauthenticated --no-install-recommends \
+  musescore3
 
 # Run the web service on container startup. Here we use the gunicorn
 # webserver, with one worker process and 8 threads.
